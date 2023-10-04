@@ -1,115 +1,86 @@
-// Reset and General Styles
+/* Reset and General Styles */
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; // Hide overflowing stars
-}
-
-// Header Styles
-header {
-  background: linear-gradient(to right, #3498db, #2980b9);
-  color: #fff;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  // Navigation Styles
-  nav {
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-
-      li {
-        display: inline;
-        margin-right: 20px;
-
-        a {
-          text-decoration: none;
-          color: #fff;
-          font-weight: bold;
-          transition: color 0.3s;
-
-          &:hover {
-            color: #f39c12;
-          }
-        }
-      }
-    }
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
   }
-}
-
-// Content Section Styles
-#content {
-  background: linear-gradient(to right, #ecf0f1, #bdc3c7);
-  padding: 20px;
-
-  // Banner Styles
+  
+  /* Header Styles */
+  header {
+    background: linear-gradient(to right, #3498db, #2980b9);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #f39c12;
+  }
+  
+  /* Content Section Styles */
+  #content {
+    background: linear-gradient(to right, #ecf0f1, #bdc3c7);
+    padding: 20px;
+  }
+  
+  /* Banner Styles */
   .banner {
     background: linear-gradient(to right, #3498db, #2980b9);
     color: #fff;
     text-align: center;
     padding: 50px 0;
   }
-}
-
-// Starry Background Animation
-@keyframes moveStars {
-  from {
-    transform: translate(0, 0);
+  
+  /* Container Styles */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
   }
-  to {
-    transform: translate(-100%, -100%);
+  
+  /* Product Styles */
+  .product {
+    display: flex;
+    margin-bottom: 40px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
   }
-}
-
-// Container Styles
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px;
-  overflow: hidden; // Hide overflowing stars
-  position: relative;
-
-  // Stars Styles
-  &:before {
-    content: ' ';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300%;
-    height: 300%;
-    background: url('https://image-url-for-your-stars') repeat;
-    animation: moveStars 20s linear infinite;
-  }
-}
-
-// Product Styles
-.product {
-  display: flex;
-  margin-bottom: 40px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
-
-  img {
+  
+  .product img {
     width: 40%;
     border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    animation: pulse 1.5s infinite alternate; // Pulsating animation
+    transition: transform 0.3s;
   }
-
-  &:hover {
+  
+  .product:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
-
-  &:hover img {
+  
+  .product:hover img {
     transform: rotate(10deg) scale(1.1);
   }
-
-  // Product Info Styles
+  
   .product-info {
     flex: 1;
     padding: 20px;
@@ -117,38 +88,207 @@ header {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+  
+  /* Footer Styles */
+  footer {
+    background: linear-gradient(to right, #2c3e50, #34495e);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-media img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+  }
+  
+  .social-media img:hover {
+    transform: scale(1.2) rotate(20deg);
+  }
+  
+  /* Additional Styles */
+  /* Add more styles here to enhance the visual appeal of your website */
+  
+  /* ... */
+  /* ... */
+  /* ... */
+  
+  /* Repeat the pattern for more lines */
+/* Additional Styles - Continued */
+
+/* Section Styles */
+section {
+    margin-bottom: 40px;
+  }
+  
+  /* About Section Styles */
+  #about {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #about h2 {
+    color: #3498db;
+  }
+  
+  #about p {
+    color: #555;
+  }
+  
+  /* Contact Section Styles */
+  #contact {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contact h2 {
+    color: #3498db;
+  }
+  
+  /* Form Styles */
+  form {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (max-width: 768px) {
+    .product {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .product img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+/* ... Your existing styles ... */
+
+/* Hover Animation on Products */
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-// Footer Styles
-footer {
-  background: linear-gradient(to right, #2c3e50, #34495e);
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+.product:hover img {
+  transform: rotate(10deg) scale(1.1);
+  transition: transform 0.3s;
+}
 
-  // Social Media Styles
-  .social-media {
-    img {
-      width: 30px;
-      margin: 0 10px;
-      transition: transform 0.3s;
+/* Footer Animations */
+.footer {
+  transition: background-color 0.5s;
+  cursor: pointer;
 
-      &:hover {
-        transform: scale(1.2) rotate(20deg);
-      }
+  &:hover {
+    background-color: #1a242f;
+  }
+
+  .social-media img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.2) rotate(20deg);
     }
   }
 }
 
-// Additional Styles - Continued
-// ... (you can continue adding more styles here)
+/* Additional Styles - Continued */
+/* ... Your existing styles ... */
 
-// Pulsating Animation
-@keyframes pulse {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.1);
+/* About Section Animations */
+#about {
+  transform: scale(1);
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.05);
   }
 }
+
+/* Contact Form Animations */
+#contact form {
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  padding: 20px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #dfe6e9;
+  }
+
+  label {
+    color: #555;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #3498db;
+    }
+  }
+
+  input,
+  textarea {
+    transition: border-color 0.3s;
+
+    &:focus {
+      border-color: #3498db;
+    }
+  }
+
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #2980b9;
+    }
+  }
+}
+
+/* Responsive Styles */
+/* ... Your existing styles ... */
