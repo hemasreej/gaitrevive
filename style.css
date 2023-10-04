@@ -2,95 +2,100 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  header {
-    background: linear-gradient(to right, #3498db, #2980b9); /* Gradient blue for header */
+}
+
+header {
+    background: linear-gradient(to right, #3498db, #2980b9);
     color: #fff;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  nav ul {
+    padding: 10px 20px; /* Increased padding for better visual balance */
+    display: flex;
+    justify-content: space-between; /* Move logo and nav to opposite sides */
+    align-items: center; /* Center items vertically */
+}
+
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     display: inline;
     margin-right: 20px;
-  }
-  
-  nav a {
+}
+
+nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     transition: color 0.3s;
-  }
-  
-  nav a:hover {
-    color: #f39c12; /* Change color to orange on hover */
-  }
-  
-  #content {
-    background: linear-gradient(to right, #ecf0f1, #bdc3c7); /* Gradient from light grey to dark grey */
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+#content {
+    background: linear-gradient(to right, #ecf0f1, #bdc3c7);
     padding: 20px 0;
-  }
-  
-  .banner {
+}
+
+.banner {
     background: linear-gradient(to right, #3498db, #2980b9);
     color: #fff;
     text-align: center;
     padding: 50px 0;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px;
-  }
-  
-  .product {
+}
+
+.product {
     display: flex;
     margin-bottom: 40px;
-    transition: transform 0.3s;
-  }
-  
-  .product img {
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer; /* Add cursor pointer for better user feedback */
+}
+
+.product img {
     width: 40%;
     border-radius: 8px;
-  }
-  
-  .product:hover {
-    transform: translateY(-5px); /* Bounce up on hover */
-  }
-  
-  .product:hover img {
-    transform: rotateY(180deg);
-  }
-  
-  .product-info {
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+}
+
+.product:hover img {
+    transform: rotate(10deg) scale(1.1); /* Rotate and scale up on hover */
+}
+
+.product-info {
+    flex: 1; /* Take remaining width */
     padding: 20px;
     background: linear-gradient(to right, #fff, #ecf0f1);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  footer {
+}
+
+footer {
     background: linear-gradient(to right, #2c3e50, #34495e);
     color: #fff;
     padding: 20px 0;
     text-align: center;
-  }
-  
-  .social-media img {
+}
+
+.social-media img {
     width: 30px;
     margin: 0 10px;
     transition: transform 0.3s;
-  }
-  
-  .social-media img:hover {
-    transform: scale(1.2) rotate(20deg); /* Scale up and rotate on hover */
-  }
-  
+}
+
+.social-media img:hover {
+    transform: scale(1.2) rotate(20deg);
+}
